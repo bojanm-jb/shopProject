@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-logo">
+                        <a href="#" class="navbar-brand"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="collapsed navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://demo2.snapstrg.com/" title="Home"><i class="fas fa-home"></i></a></li>
+                            <li><a href="https://demo2.snapstrg.com/kleider/" title="Kleider"><span>Kleider</span></a></li>
+                            <li><a href="https://demo2.snapstrg.com/shirts-tops/" title="Shirts &amp; Tops"><span>Shirts &amp; Tops</span></a></li>
+                            <li><a href="https://demo2.snapstrg.com/pullover-strickjacken/" title="Pullover &amp; Strickjacken"><span>Pullover &amp; Strickjacken</span></a></li>
+                            <li><a href="https://demo2.snapstrg.com/jacken/" title="Jacken"><span>Jacken</span></a></li>
+                            <li><a href="https://demo2.snapstrg.com/blog/" title="Blog"><span>Blog</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="navbar-icon-list">
+                        <ul class="navbar-right-list">
+                            <li><a id="snapstrg-show-search" class="btn entry--link tt-tooltip tooltipstered"><i class="fas fa-search"></i></a></li>
+                            <li><a href="https://demo2.snapstrg.com/note" class="btn tt-tooltip tooltipstered"><i class="far fa-heart"></i></a></li>
+                            <li><a href="https://demo2.snapstrg.com/account" class="btn account--link tt-tooltip tooltipstered"><i class="far fa-user"></i></a></li>
+                            <li><a class="btn is--icon-left cart--link tt-tooltip tooltipstered" href="https://demo2.snapstrg.com/checkout/cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart--amount">0,00&nbsp;€ *</span></a></li>
+                            <li><a class="topbar--link entry--link entry--trigger btn is--icon-left"><i class="fas fa-question-circle"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="slider main-slider" id="slider1">
+            <div class="left-button-arrow arrows"><i class="fas fa-angle-left"></i></div>
+            <div class="right-button-arrow arrows"><i class="fas fa-angle-right"></i></div>
+            <div class="slider-dots">
+                <div class="dot1 dots active">1</div>
+                <div class="dot2 dots">2</div>
+                <div class="dot3 dots">3</div>
+                <div class="dot4 dots">4</div>
+                <div class="dot5 dots">5</div>
+                <div class="dot6 dots">6</div>
+                <div class="dot7 dots">7</div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-picture-wrapper">
+                    <div class="slider-picture1 picture-slide active" data-id="1">
+                        <div class="picture1 slider-item">
+                            <img src="images/image16.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture2 picture-slide" data-id="2">
+                        <div class="picture2 slider-item">
+                            <img src="images/image17.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture3 picture-slide" data-id="3">
+                        <div class="picture3 slider-item">
+                            <img src="images/image18.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture4 picture-slide" data-id="4">
+                        <div class="picture4 slider-item">
+                            <img src="images/image19.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture5 picture-slide" data-id="5">
+                        <div class="picture5 slider-item">
+                            <img src="images/image20.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture6 picture-slide" data-id="6">
+                        <div class="picture6 slider-item">
+                            <img src="images/image1.jpg">
+                        </div>
+                    </div>
+                    <div class="slider-picture7 picture-slide" data-id="7">
+                        <div class="picture7 slider-item">
+                            <img src="images/image9.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        <section id="main-content">
+            <div class="main-content-wraper">
+        <article class="content-container">
+            <a href="#" class="banner--link content col-xs-12 col-sm-6" target="_top" style="background-image: url('images/image2.jpg')"></a>
+            <div class="text-wraper content col-xs-12 col-sm-6">
+                <div class="text-heading">
+                    Find Your Dream With Us
+                </div>
+                <div class="text-paragraphs">
+                    <p style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&nbsp;</p>
+                    <p style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.&nbsp;</p>
+                </div>
+            </div>
+        </article>
+        <div class="carousel content-wraper col-xs-12 col-sm-6">
+            <div class="slider-left slider col-xs-12 col-sm-6" id="slider2">
+                <div class="slider-wrapper">
+                    <div class="left-carousel-heading">
+                        Topseller
+                    </div>
+                    <div class="slider-picture-wrapper col-xs-12 col-sm-6 col-md-4">
+                        <div class="carousel-offer-content1 picture-slide active col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" title="Küche 90er" class="product--image"><img src="images/image10.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" class="product--title" title="Küche 90er">
+                                        Küche 90er
+                                    </a>
+                                    <div class="product--price">
+                                        <span class="price--default is--nowrap is--discount">821,00&nbsp;€*</span>
+                                        <span class="price--pseudo">
+                                                <span class="price--discount is--nowrap">999,00&nbsp;€*</span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" title="4+1 Set Romantik" class="product--image"><img src="images/image11.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" class="product--title" title="4+1 Set Romantik">
+                                            4+1 Set Romantik
+                                        </a>
+                                        <div class="product--price-info">
+                                            <span class="price--default is--nowrap">599,00&nbsp;€*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" title="Handtücher 1 Stk" class="product--image"><img src="images/image12.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" class="product--title" title="Handtücher 1 Stk">
+                                            Handtücher 1 Stk
+                                        </a>
+                                        <div class="product--price-info">
+                                                <span class="price--default is--nowrap">ab             29,99&nbsp;€*
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content1 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" title="Küche 90er" class="product--image"><img src="images/image10.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" class="product--title" title="Küche 90er">
+                                        Küche 90er
+                                    </a>
+                                    <div class="product--price">
+                                        <span class="price--default is--nowrap is--discount">821,00&nbsp;€*</span>
+                                        <span class="price--pseudo">
+                                                <span class="price--discount is--nowrap">999,00&nbsp;€*</span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" title="4+1 Set Romantik" class="product--image"><img src="images/image11.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" class="product--title" title="4+1 Set Romantik">
+                                            4+1 Set Romantik
+                                        </a>
+                                        <div class="product--price-info">
+                                            <span class="price--default is--nowrap">599,00&nbsp;€*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" title="Handtücher 1 Stk" class="product--image"><img src="images/image12.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" class="product--title" title="Handtücher 1 Stk">
+                                            Handtücher 1 Stk
+                                        </a>
+                                        <div class="product--price-info">
+                                                <span class="price--default is--nowrap">ab             29,99&nbsp;€*
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content1 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" title="Küche 90er" class="product--image"><img src="images/image10.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/kleider/blusenkleider/51/kueche-90er" class="product--title" title="Küche 90er">
+                                        Küche 90er
+                                    </a>
+                                    <div class="product--price">
+                                        <span class="price--default is--nowrap is--discount">821,00&nbsp;€*</span>
+                                        <span class="price--pseudo">
+                                                <span class="price--discount is--nowrap">999,00&nbsp;€*</span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" title="4+1 Set Romantik" class="product--image"><img src="images/image11.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/35/4-1-set-romantik" class="product--title" title="4+1 Set Romantik">
+                                            4+1 Set Romantik
+                                        </a>
+                                        <div class="product--price-info">
+                                            <span class="price--default is--nowrap">599,00&nbsp;€*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" title="Handtücher 1 Stk" class="product--image"><img src="images/image12.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <div class="product--details">
+                                        <a href="https://demo2.snapstrg.com/jacken/lederjacken/37/handtuecher-1-stk" class="product--title" title="Handtücher 1 Stk">
+                                            Handtücher 1 Stk
+                                        </a>
+                                        <div class="product--price-info">
+                                                <span class="price--default is--nowrap">ab             29,99&nbsp;€*
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-button-arrow  arrows"><i class="fas fa-angle-left"></i></div>
+                    <div class="right-button-arrow arrows"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel content-wraper col-xs-12 col-sm-6">
+            <div class="slider-right slider col-xs-12 col-sm-6" id="slider3">
+                <div class="slider-wrapper">
+                    <div class="right-carousel-heading">
+                        Neuste Artikel
+                    </div>
+                    <div class="slider-picture-wrapper col-xs-12 col-sm-6 col-md-4">
+                        <div class="carousel-offer-content1 picture-slide active col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image13.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/63/kissen-m" class="product--title" title="Kissen M">
+                                        Kissen M
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                9,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" title="Kissen Schlafzimmer" class="product--image"><img src="images/image14.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" class="product--title" title="Kissen Schlafzimmer">
+                                        Kissen Schlafzimmer
+                                    </a>
+                                    <div class="product--price-info">
+                                        <div class="product--price">
+                                                <span class="price--default is--nowrap is--discount">
+                                                    19,99&nbsp;€*
+                                                </span>
+                                            <span class="price--pseudo">
+                                                    <span class="price--discount is--nowrap">
+                                                        22,99&nbsp;€*
+                                                    </span>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image15.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/langarmshirts/71/vorhang-retro" class="product--title" title="Vorhang Retro">
+                                        Vorhang Retro
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                99,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content1 picture-slide active col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image13.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/63/kissen-m" class="product--title" title="Kissen M">
+                                        Kissen M
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                9,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" title="Kissen Schlafzimmer" class="product--image"><img src="images/image14.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" class="product--title" title="Kissen Schlafzimmer">
+                                        Kissen Schlafzimmer
+                                    </a>
+                                    <div class="product--price-info">
+                                        <div class="product--price">
+                                                <span class="price--default is--nowrap is--discount">
+                                                    19,99&nbsp;€*
+                                                </span>
+                                            <span class="price--pseudo">
+                                                    <span class="price--discount is--nowrap">
+                                                        22,99&nbsp;€*
+                                                    </span>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image15.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/langarmshirts/71/vorhang-retro" class="product--title" title="Vorhang Retro">
+                                        Vorhang Retro
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                99,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content1 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image13.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/63/kissen-m" class="product--title" title="Kissen M">
+                                        Kissen M
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                9,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content2 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" title="Kissen Schlafzimmer" class="product--image"><img src="images/image14.jpg"></a>
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/tops/62/kissen-schlafzimmer" class="product--title" title="Kissen Schlafzimmer">
+                                        Kissen Schlafzimmer
+                                    </a>
+                                    <div class="product--price-info">
+                                        <div class="product--price">
+                                                <span class="price--default is--nowrap is--discount">
+                                                    19,99&nbsp;€*
+                                                </span>
+                                            <span class="price--pseudo">
+                                                    <span class="price--discount is--nowrap">
+                                                        22,99&nbsp;€*
+                                                    </span>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-offer-content3 picture-slide col-xs-12">
+                            <div class="carousel-offer-wraper offer-content">
+                                <div class="picture-content picture-wraper">
+                                    <img src="images/image15.jpg">
+                                </div>
+                                <div class="text-offer text-offer-content">
+                                    <a href="https://demo2.snapstrg.com/shirts-tops/langarmshirts/71/vorhang-retro" class="product--title" title="Vorhang Retro">
+                                        Vorhang Retro
+                                    </a>
+                                    <div class="product--price">
+                                            <span class="price--default is--nowrap">
+                                                99,99&nbsp;€*
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-button-arrow  arrows"><i class="fas fa-angle-left"></i></div>
+                    <div class="right-button-arrow arrows"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <article class="image-wraper">
+            <a href="https://demo2.snapstrg.com/kleider/" title="Kleider" class="category-teaser--link col-xs-6 col-sm-6 col-md-4" id="teaser--a87ff679a2f3e71d9181a67b7542122c" style="background-image: url('images/image3.jpg')">
+                <span class="category-teaser--title">Kleider</span>
+            </a>
+            <a href="https://demo2.snapstrg.com/pullover-strickjacken/strickjacken/" title="Strickjacken" class="category-teaser--link col-xs-6 col-sm-6 col-md-4" id="teaser--1679091c5a880faf6fb5e6087eb1b2dc" style="background-image: url('images/image4.jpg')">
+                <span class="category-teaser--title">Strickjacken</span>
+            </a>
+            <a href="https://demo2.snapstrg.com/kleider/etuikleider/" title="Etuikleider" class="category-teaser--link col-xs-6 col-sm-6 col-md-4" id="teaser--c9f0f895fb98ab9159f51fd0297e236d" style="background-image: url('images/image5.jpg')">
+                <span class="category-teaser--title">Etuikleider</span>
+            </a>
+            <a href="https://demo2.snapstrg.com/shirts-tops/t-shirts/" title="T-Shirts" class="category-teaser--link col-xs-6 col-sm-6 col-md-4" id="teaser--e4da3b7fbbce2345d7772b0674a318d5" style="background-image: url('images/image6.jpg')">
+                <span class="category-teaser--title">T-Shirts</span>
+            </a>
+            <a href="https://demo2.snapstrg.com/pullover-strickjacken/sweatjacken/" title="Sweatjacken" class="category-teaser--link  col-xs-6 col-sm-6 col-md-4" id="teaser--8f14e45fceea167a5a36dedd4bea2543" style="background-image: url('images/image7.jpg')">
+                <span class="category-teaser--title">Sweatjacken</span>
+            </a>
+            <a href="https://demo2.snapstrg.com/kleider/blusenkleider/" title="Blusenkleider" class="category-teaser--link col-xs-6 col-sm-6 col-md-4" id="teaser--45c48cce2e2d7fbdea1afc51c7c6ad26"  style="background-image: url('images/image8.jpg')">
+                <span class="category-teaser--title">Blusenkleider</span>
+            </a>
+        </article>
+    </div>
+</section>
+        <footer id="footer-main">
+    <div class="footer-main-wrapper">
+        <div class="footer-detail">
+            <div class="footer-detail-wrapper">
+                <div class="footer-about-us footer-detail-content col-sm-6 col-xs-12">
+                    <div class="about-us-heading">
+                        Über uns
+                    </div>
+
+                    <div class="about-us-content">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="footer-contact-us footer-detail-content col-sm-6 col-xs-12">
+                    <div class="contact-us-heading">
+                        Newsletter
+                    </div>
+                    <div class="contact-us-form">
+                        <p>Abonnieren Sie den kostenlosen Newsletter und verpassen Sie keine Neuigkeit oder Aktion mehr von Snapstrg1 Professional Demoshop.</p>
+                        <form id="newsletter-form">
+                            <input type="email" class="newsletter--field" placeholder="Ihre E-Mail Adresse">
+                            <button type="submit" class="newsletter--button btn">
+                                <i class="fas fa-envelope"></i>
+                                <span class="button--text">Newsletter abonnieren</span>
+                            </button>
+                            <p class="privacy-information">
+                                Ich habe die <a title="Datenschutzbestimmungen" href="https://demo2.snapstrg.com/datenschutz" target="_blank">Datenschutzbestimmungen</a> zur Kenntnis genommen.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footer-middle-content hidden-xs">
+                <div class="middle-content-logo col-sm-3">
+                    <div class="logo-heading">
+                        Service Hotline
+                    </div>
+                    <div class="picture-wrapper">
+                        <div class="wrapper-image">
+                            <a class="logo--link" href="https://demo2.snapstrg.com/" title="Snapstrg1 Professional Demoshop - zur Startseite wechseln"><img src="images/logo.png"></a>
+                        </div>
+                        <div class="wrapper-text">
+                            <p class="column--desc">Telefonische Unterstützung und Beratung unter:<br><br><a href="tel:+49180000000" class="footer--phone-link">0180 - 000000</a>Mo-Fr, 09:00 - 17:00 Uhr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-content-service col-sm-3">
+                    <div class="service-heading">
+                        Shop Service
+                    </div>
+                    <div class="service-list">
+                        <ul class="navigation--list">
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/defektes-produkt" title="Defektes Produkt" target="_self">
+                                    Defektes Produkt
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/partnerformular" title="Partnerprogramm" target="_self">
+                                    Partnerprogramm
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/rechtliche-vorabinformationen" title="rechtliche Vorabinformationen">
+                                    rechtliche Vorabinformationen
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/kontaktformular" title="Kontakt" target="_self">
+                                    Kontakt
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/versand-und-zahlungsbedingungen" title="Versand und Zahlungsbedingungen">
+                                    Versand und Zahlungsbedingungen
+                                </a>
+                            </li>
+                            <li class="navigation--entry" role="menuitem">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/rueckgabe" title="Rückgabe" target="_self">
+                                    Rückgabe
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/widerrufsrecht" title="Widerrufsrecht">
+                                    Widerrufsrecht
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/widerrufsformular" title="Widerrufsformular">
+                                    Widerrufsformular
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/agb" title="AGB">
+                                    AGB
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle-content-info col-sm-3">
+                    <div class="info-heading">
+                        Informationen
+                    </div>
+                    <div class="info-list">
+                        <ul class="navigation--list">
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/newsletter" title="Newsletter">
+                                    Newsletter
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/ueber-uns" title="Über uns">
+                                    Über uns
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/datenschutz" title="Datenschutz">
+                                    Datenschutz
+                                </a>
+                            </li>
+                            <li class="navigation--entry">
+                                <a class="navigation--link" href="https://demo2.snapstrg.com/impressum" title="Impressum">
+                                    Impressum
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle-content-social col-sm-3">
+                    <div class="social-heading">
+                        Folge uns
+                    </div>
+                    <div class="social-butotns">
+                        <p class="column--desc">
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--github"><i class="fab fa-github-alt"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--googleplus"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="snapstrg--social-media-button" id="snapstrg--icon--spotify"><i class="fab fa-spotify"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footer-bottom">
+                <div class="bottom-heading">
+                    <p class="vat-info--text">
+                        * Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a title="Versandkosten" href="https://demo2.snapstrg.com/versand-und-zahlungsbedingungen">Versandkosten</a> und ggf. Nachnahmegebühren, wenn nicht anders beschrieben
+                    </p>
+                </div>
+                <div class="bottom-copyright">
+                    Realisiert mit Shopware
+                    <br>
+                    Theme &amp; Design by Snapstrg
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
