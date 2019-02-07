@@ -229,8 +229,7 @@ header .navbar-default .container-fluid .navbar-icon-list ul li a span {
 
 .slider .slider-wrapper .slider-picture-wrapper .picture-slide .slider-item {
     height: 100vh;
-    width: 1712px;
-    transform: translate(0%, -30.5%);
+    width: 100%;
     display: inline-block;
     position: relative;
     z-index: 100;
@@ -242,6 +241,7 @@ header .navbar-default .container-fluid .navbar-icon-list ul li a span {
     max-height: 100%;
     max-width: 100%;
     display: block;
+    transform: translate(0%, -30.5%);
 }
 
 #main-content {
