@@ -31,19 +31,19 @@
 
         addListener() {
             document.querySelector('#' + this.slider.id + ' .left-button-arrow.arrows').addEventListener('click', (e) => {
-                    this.slideLeft();
+                this.slideLeft();
             });
             document.querySelector('#' + this.slider.id + ' .right-button-arrow.arrows').addEventListener('click', (e) => {
-                    this.slideRight();
+                this.slideRight();
             });
 
             this.slider.addEventListener('mouseenter', (e) => {
-                this.sliderStop();
+
             });
 
-            this.slider.addEventListener('mouseleave', (e) => {
-                this.sliderMove();
-            });
+            // this.slider.addEventListener('mouseleave', (e) => {
+            //     this.sliderMove();
+            // });
 
             for (let i = 0 ; i < this.sliderDotItems.length; i++) {
                 this.sliderDotItems[i].addEventListener('click' , (e) => {
@@ -155,11 +155,10 @@
                 this.sliderItems[index].classList.add('active');
             });
         }
-    }
-    const secondSlider = document.querySelector('#slider2');
-    const thirdSlider = document.querySelector('#slider3');
-    const firstSlider = document.querySelector('#slider1');
-    const makeFirstSlider = new Slider(firstSlider);
-    const makeSecondSlider = new Slider(secondSlider);
-    const makeThirdSlider = new Slider(thirdSlider);
 
+    }
+
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach( (e) => {
+       new Slider(e);
+    });
