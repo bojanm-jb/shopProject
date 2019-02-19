@@ -1,5 +1,4 @@
 
-    let stp;
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     };
@@ -18,7 +17,12 @@
     });
 
     class Slider {
-        constructor(slider) {
+        constructor(slider, index) {
+            this.options = {
+                autoplay: true,
+                interval: 3000,
+                index: index,
+            };
             this.slider = slider;
             this.sliderItems = document.querySelectorAll('#' + this.slider.id + ' .picture-slide');
             this.sliderDotItems = document.querySelectorAll('#' + this.slider.id + ' .dots');
@@ -26,7 +30,6 @@
             this.sliderDotWrapper = document.querySelector('#' + this.slider.id + ' .slider-dots');
             this.addListener();
             this.sliderMove();
-            this.mouseenter = false;
         }
 
         addListener() {
@@ -37,13 +40,13 @@
                 this.slideRight();
             });
 
-            this.slider.addEventListener('mouseenter', (e) => {
-
+            this.slider.addEventListener('mouseenter', () => {
+                this.sliderStop();
             });
 
-            // this.slider.addEventListener('mouseleave', (e) => {
-            //     this.sliderMove();
-            // });
+            this.slider.addEventListener('mouseleave', (e) => {
+                this.sliderStart();
+            });
 
             for (let i = 0 ; i < this.sliderDotItems.length; i++) {
                 this.sliderDotItems[i].addEventListener('click' , (e) => {
@@ -106,35 +109,45 @@
         }
 
         sliderMove() {
-            stp = setInterval(function () {
-                for (let i = 0; i < this.sliderItems.length; i++) {
-                    let el = this.sliderItems[i];
-                    if (el.classList.contains('active')) {
-                        if (i === this.sliderItems.length - 1) {
-                            this.sliderItems[0].classList.add('active');
-                            this.sliderItems[this.sliderItems.length - 1].classList.remove('active');
-                            this.sliderWrapper.style.transform = `translateX(0%)`;
-                            if (this.slider.contains(this.sliderDotWrapper)) {
-                                this.sliderDotItems[0].classList.add('active');
-                                this.sliderDotItems[this.sliderDotItems.length - 1].classList.remove('active');
-                            }
-                        } else {
-                            this.sliderItems[i].classList.remove('active');
-                            this.sliderItems[i + 1].classList.add('active');
-                            this.sliderWrapper.style.transform = `translateX(-${i + 1}00%)`;
-                            if (this.slider.contains(this.sliderDotWrapper)) {
-                                this.sliderDotItems[i].classList.remove('active');
-                                this.sliderDotItems[i + 1].classList.add('active');
+            const timeout = this.options.index * 1000;
+
+            setTimeout(() => {
+                setInterval( (e) => {
+                    if (this.options.autoplay) {
+                        for (let i = 0; i < this.sliderItems.length; i++) {
+                            let el = this.sliderItems[i];
+                            if (el.classList.contains('active')) {
+                                if (i === this.sliderItems.length - 1) {
+                                    this.sliderItems[0].classList.add('active');
+                                    this.sliderItems[this.sliderItems.length - 1].classList.remove('active');
+                                    this.sliderWrapper.style.transform = `translateX(0%)`;
+                                    if (this.slider.contains(this.sliderDotWrapper)) {
+                                        this.sliderDotItems[0].classList.add('active');
+                                        this.sliderDotItems[this.sliderDotItems.length - 1].classList.remove('active');
+                                    }
+                                } else {
+                                    this.sliderItems[i].classList.remove('active');
+                                    this.sliderItems[i + 1].classList.add('active');
+                                    this.sliderWrapper.style.transform = `translateX(-${i + 1}00%)`;
+                                    if (this.slider.contains(this.sliderDotWrapper)) {
+                                        this.sliderDotItems[i].classList.remove('active');
+                                        this.sliderDotItems[i + 1].classList.add('active');
+                                    }
+                                }
+                                return;
                             }
                         }
-                        return;
                     }
-                }
-            }.bind(this), 3000);
+                }, this.options.interval);
+            }, timeout);
         }
 
         sliderStop() {
-            clearInterval(stp);
+            this.options.autoplay = false;
+        }
+
+        sliderStart() {
+            this.options.autoplay = true;
         }
 
         setActiveDot(i) {
@@ -159,6 +172,6 @@
     }
 
     const sliders = document.querySelectorAll('.slider');
-    sliders.forEach( (e) => {
-       new Slider(e);
+    sliders.forEach( (e, i) => {
+       new Slider(e, i);
     });
